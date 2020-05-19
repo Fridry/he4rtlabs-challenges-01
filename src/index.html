@@ -4,12 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
+    <div class="container">
+      <div class="div-image">
+        <img src="assets/images/wave.png" alt="" class="wave" />
+        <img
+          src="assets/images/undraw_web_developer_p3e5.svg"
+          alt=""
+          class="img"
+        />
+      </div>
+
+      <div class="div-form">
+        <div class="content">
+          <header class="header">
+            <img src="assets/images/logohe4art.png" alt="" />
+          </header>
+          <h2>Calculadora de horas para Freelas</h2>
+          <form id="formulario" class="formulario">
+            <div class="card">
+              <input
+                type="number"
+                name="tempo-diario"
+                id="tempo-diario"
+                class="tempo-diario"
+                placeholder="Tempo diário investido no projeto"
+                required
+              />
+            </div>
+
+            <div class="card">
+              <input
+                type="number"
+                name="dias-efetivos"
+                id="dias-efetivos"
+                class="dias-efetivos"
+                placeholder="Dias efetivos trabalhando"
+                required
+              />
+            </div>
+
+            <div class="card">
+              <input
+                type="number"
+                name="dias-ferias"
+                id="dias-ferias"
+                class="dias-ferias"
+                placeholder="Dias de Férias por projeto"
+                required
+              />
+            </div>
+
+            <div class="card">
+              <input
+                type="number"
+                name="valor-projeto"
+                id="valor-projeto"
+                class="valor-projeto"
+                placeholder="Valor total do Projeto"
+                required
+              />
+            </div>
+
+            <button class="btn" type="submit">Calcular</button>
+          </form>
+
+          <div class="resultado" id="resultado"><h2>Valor da hora:</h2></div>
+        </div>
+        <!-- <footer class="footer">He4rtdevs - 2020 - Fridry</footer> -->
+      </div>
     </div>
-    <script src="./main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
